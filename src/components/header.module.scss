@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+}
+
+
+.hamburguerIcon {
+    display: block; 
+    cursor: pointer;
+}
+
+.navMenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 5.5rem;
+    padding: 2rem;
+    display: flex; 
+    flex-direction: column;
+    background-color: #ffff;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+
+    li {
+        list-style: none;
+        margin: 1rem 0;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #000;
+        font-size: 1.3rem;
+    }
+    a:hover {
+        color: #555454;
+    }
+}
+
+.navMenu.open { 
+    transform: translateX(0);
+}
+
+
+/* ======================================= */
+/* ESTILOS DESKTOP (A partir de 768px) */
+/* ======================================= */
+
+@media (min-width: 768px) {
+    
+    .hamburguerIcon {
+        display: none; /* Esconde o botão no desktop */
+    }
+
+    .navMenu {
+        /* Reseta os estilos do menu mobile */
+        position: static;
+        transform: none;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        
+        /* Torna o layout horizontal */
+        flex-direction: row;
+        gap: 1.5rem; /* Espaçamento entre os links */
+    }
+
+    .navMenu li {
+        margin: 0; /* Reseta a margem vertical do mobile */
+    }
+
+    .navMenu a {
+        font-size: 1rem; /* Tamanho normal para desktop */
+    }
+}
