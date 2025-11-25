@@ -10,6 +10,7 @@
     align-items: center;
     padding: 1rem;
     position: relative;
+    background-color: #ffff;
 }
 
 
@@ -24,11 +25,11 @@
     right: 0;
     width: 100%;
     height: 100%;
-    margin-top: 5.5rem;
+    margin-top: 5rem;
     padding: 2rem;
     display: flex; 
     flex-direction: column;
-    background-color: #ffff;
+    background-color: #f7f7f7;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
     z-index: 1000;

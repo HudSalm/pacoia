@@ -1,0 +1,66 @@
+.colorsContainer {
+    display: grid;
+    justify-content: center;
+
+    img {
+        max-width: 100%;
+        width: 60vw;
+        justify-self: center;
+    }
+
+    .colorsContent {
+        display: grid;
+        box-shadow: 0 4px 4px  rgba(0, 0, 0, 0.5);
+        margin-top: 1rem;
+
+        .starIcon {
+            width: 40vw;
+            justify-self: center;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .containerbutton {
+            margin-top: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-self: center;
+
+            button {
+                padding: 1.5rem;
+                border-radius: 50%;
+                width: 10vw;
+                border: none;
+            }
+            .pink {
+                background-color: #DD5C86;
+            }
+            .red {
+                background-color: #B42B3C;
+            }
+            .blue {
+                background-color: #906276;
+            }
+            .brown {
+                background-color: #48312E;
+            }
+        }
+
+        .description {
+            display: grid;
+            gap: 1rem;
+            padding: 1rem;
+
+            h3 {
+                font-size: 1.3rem;
+            }
+            p {
+                text-align: left;
+            }
+            }
+    }
+}

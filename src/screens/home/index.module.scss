@@ -1,0 +1,39 @@
+.looks {
+    display: grid;
+    gap: 1rem;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #f7f7f7;
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+
+    }
+}
+
+.colors {
+    display: grid;
+    gap: 1.5rem;
+    padding: 2rem;
+    justify-content: center;
+    text-align: center;
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+.news {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: #f7f7f7;
+}
